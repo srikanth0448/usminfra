@@ -1,0 +1,491 @@
+/* ==================================================
+   HERO SECTION
+================================================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  padding: 5px 20px 20px;
+  background-color: #fff;
+}
+
+#slide-show {
+  position: absolute;
+  inset: 110px 20px 20px;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slidex {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slidex.activx {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide-text {
+  color: #fff;
+  text-align: center;
+}
+
+.slide-text h2 {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.slide-text b,
+.slide-text strong {
+  font-weight: 400;
+}
+
+.slideshow-nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  inset-inline: 20px;
+  transform: translateY(-50%);
+}
+
+.slideshow-nav a {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  color: #fff;
+  background: #24346e;
+  border-radius: 50%;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.slideshow-nav a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.previousx {
+  float: left;
+}
+
+.nextx {
+  float: right;
+}
+
+.bg1 {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #24346e 0%, rgba(36, 52, 110, 0) 50%);
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-bg video {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.slider-center {
+  position: absolute;
+  inset: 0;
+  width: 94%;
+  transform: translateX(3%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+/* ==================================================
+   HERO COUNTERS
+================================================== */
+.hero-counters {
+  padding: 10px 0;
+  background: linear-gradient(0deg, #fcfaf7 0%, #fff 100%);
+}
+
+.hero-counters .counter {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 1px 16px -2px #38414a26;
+}
+
+.hero-counters .count-icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1.5rem;
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+
+.hero-counters .count-icon .svg-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Icon Backgrounds */
+.hero-counters .icon-bg1 {
+  background: #e7f0f9;
+}
+
+.hero-counters .icon-bg2 {
+  background: #e9fbf4;
+}
+
+.hero-counters .icon-bg3 {
+  background: #fcf2e8;
+}
+
+.hero-counters .icon-bg4 {
+  background: #f0e3f7;
+}
+
+.hero-counters .count-number {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #24346e;
+}
+
+.hero-counters .count-text {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(19, 39, 40, 0.6);
+}
+
+/* ==================================================
+   NO.1 RESORT SECTION
+================================================== */
+.no1-resort-section blockquote {
+  margin-bottom: 25px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #24346e;
+}
+
+.no1-resort-section .btn-primary {
+  padding: 18px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.no1-resort-section svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==================================================
+   WHAT WE DO
+================================================== */
+.whatWeDo {
+  position: relative;
+  padding: 15px;
+  background: #24346e;
+}
+
+.whatWeDo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://usminfra.com/assets/img/bg-1.jpg") no-repeat center /
+    cover;
+  opacity: 0.15;
+}
+
+.whatWeDo-steps .whatWeDo-step {
+  min-height: 295px;
+}
+
+.whatWeDo-steps img {
+  display: none;
+}
+
+.whatWeDo-step1 {
+  background: url("https://usminfra.com/assets/img/b1.png") no-repeat top left;
+  padding-left: 300px;
+}
+
+.whatWeDo-step2 {
+  background: url("https://usminfra.com/assets/img/b2.png") no-repeat top right;
+  padding-right: 300px;
+  margin-top: -62px;
+}
+
+.whatWeDo-step3 {
+  background: url("https://usminfra.com/assets/img/b3.png") no-repeat top left;
+  padding-left: 300px;
+  margin-top: -62px;
+}
+
+/* ==================================================
+   TEXT COLORS
+================================================== */
+.text-orange {
+  color: #f8ad40;
+}
+.text-green {
+  color: #8bc34a;
+}
+.text-blue {
+  color: #03a9f4;
+}
+
+.text-orange,
+.text-green,
+.text-blue {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   BUYER BENEFITS
+================================================== */
+.buyer-benefits-section .card {
+  text-align: center;
+  border: none;
+  border-radius: 1.563rem;
+  box-shadow: 0 1px 16px -2px #38414a26;
+  transition: all 0.3s ease;
+}
+
+.buyer-benefits-section .card:hover {
+  background: #24346e;
+}
+
+.buyer-benefits-section .card:hover * {
+  color: #fff;
+}
+
+.buyer-benefits-section .card-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #132728;
+  margin-bottom: 1rem;
+}
+
+.buyer-benefits-section .card-text {
+  font-size: 1rem;
+  color: #494a50;
+}
+
+.benefit-icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #fcfaf7;
+  box-shadow: 0 3px 6px rgba(110, 78, 36, 0.11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unique-features-section {
+}
+
+.unique-features-section .features-heading-container {
+  background-image: url(https://usminfra.com/assets/img/wave-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background: #24346e;
+  padding: 80px 0px 350px 0px;
+}
+
+.unique-features-section .feature-cards-container h4 {
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.unique-features-section .feature-cards-container h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #f8ad42;
+}
+
+.unique-features-section .feature-cards-container {
+  margin-top: -350px;
+}
+
+.unique-features-section .feature-cards-div {
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.07);
+  transition:
+    box-shadow 0.3s ease-out,
+    transform 0.3s ease-out,
+    opacity 0.2s ease-out;
+  transition-delay: 0.1s;
+  transform: translateZ(0);
+  margin-bottom: 30px;
+  border: 1px solid #e7e7e7;
+  border-radius: 25px;
+}
+
+.unique-features-section .card-img {
+  border-radius: 25px !important;
+}
+
+.unique-features-section .card-img-overlay {
+  background: #24346e;
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#24346e",endColorstr="#24346e",GradientType=1);
+  position: absolute;
+  top: inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 1.8rem;
+  border-radius: 25px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.unique-features-section .card-img-overlay:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: #24346e;
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(36, 52, 110, 0.9) 0%,
+    rgba(36, 52, 110, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#24346e",endColorstr="#24346e",GradientType=1);
+}
+
+.unique-features-section .card-img-overlay .card-title {
+  z-index: 2;
+  color: #fff;
+}
+
+.project-highlights-section {
+  background: #241a10;
+  position: relative;
+}
+
+.project-highlights-section::before {
+  content: "";
+  position: absolute;
+  background: url(https://usminfra.com/assets/img/bg-3.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.15;
+}
+
+.project-highlights-section::after {
+  content: "";
+  position: absolute;
+  background: url(https://usminfra.com/assets/img/sand-brdr.png) repeat-x;
+  height: 46px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.project-highlights-section .highlights-list {
+  list-style: disc;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 15px;
+}
+
+.project-highlights-section .highlights-list li {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  padding-left: 36px;
+  margin-bottom: 20px;
+  transition: all 0.2s linear;
+}
+
+.project-highlights-section .highlights-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-image: url(https://usminfra.com/assets/img/point-icon.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s linear;
+}
+
+.ongoing-projects-section .card,
+.completed-projects-section .card {
+  border-radius: 15px;
+}
+
+.ongoing-projects-section .card-body,
+.completed-projects-section .card-body {
+  padding: 5px;
+}

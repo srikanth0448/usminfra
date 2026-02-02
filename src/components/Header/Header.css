@@ -1,0 +1,26 @@
+.header-logo {
+  height: 68px;
+}
+
+.header-navbar {
+  height: 80px;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  padding: 0 25px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: #222 !important;
+  margin-right: 20px;
+}
+
+.login-btn {
+  background: #1e9c45;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+}

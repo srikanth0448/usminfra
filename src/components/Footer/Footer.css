@@ -1,0 +1,95 @@
+.footer-wrapper {
+  background: #24346e;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.footer-wrapper .primary-footer .footer-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.footer-wrapper .primary-footer .footer-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  background: #f8ad42;
+  width: 5px;
+  height: 22px;
+}
+.footer-wrapper .primary-footer .footer-content {
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.65) !important;
+  padding: 0 20px;
+  margin: 0;
+  text-align: justify;
+  letter-spacing: normal;
+}
+.footer-wrapper .primary-footer .footer-links li a {
+  color: rgba(255, 255, 255, 0.65);
+  transition: all 0.2s linear;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.35rem 1rem;
+}
+.footer-wrapper .primary-footer .footer-links li a:hover {
+  color: #fff;
+  padding-left: 1.2rem;
+}
+.footer-wrapper .primary-footer .footer-map {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.footer-wrapper .secondary-footer .footer-copy {
+  color: #f8ad42;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-wrapper .secondary-footer hr {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+.footer-wrapper .secondary-footer .footer-keywords {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-wrapper .secondary-footer .footer-keywords a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 4px;
+  line-height: 24px;
+  font-size: 0.625rem;
+  letter-spacing: 0.01rem;
+}
+.footer-wrapper .footer-social li a {
+  display: block;
+  transition: all 0.2s linear;
+  margin-right: 8px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 11px;
+  transition: all 0.2s ease-in-out;
+}
+.footer-wrapper .footer-social li a:hover {
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  filter: brightness(150%);
+  -webkit-filter: brightness(150%);
+  -moz-filter: brightness(150%);
+}
+.footer-wrapper .footer-social li:last-child a {
+  margin: 0;
+}

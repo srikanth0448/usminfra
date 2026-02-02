@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #494a50;
+  margin-bottom: 25px;
+  word-spacing: 2px;
+}
+
+.wood-pattern-bg {
+  background-image: url("../src/assets/images/wood-pattern-50.svg");
+  background-repeat: repeat;
+  background-color: #fcfaf7;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #24346e;
+  border-color: #24346e;
+}
+
+.svg-icon {
+  width: 3.375rem;
+  height: 3.375rem;
+}

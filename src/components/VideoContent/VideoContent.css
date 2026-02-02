@@ -1,0 +1,63 @@
+.video-content-div .video-wrapper {
+  overflow: hidden;
+}
+
+.video-content-div .video-content-div.card {
+  display: flex;
+  height: 100vh;
+}
+
+.video-content-div .video-wrapper .video-overlay {
+  z-index: 9;
+  background: rgba(36, 52, 110, 0.25);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 15px;
+}
+
+.video-content-div .video-wrapper .video-overlay a {
+  background: rgba(36, 52, 110, 0.8);
+  width: 92px;
+  height: 92px;
+  font-size: 3rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.25);
+  transition: all 0.2s linear;
+}
+
+.video-content-div .video-wrapper .video-thubmnail {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video-content-div .video-wrapper .video-thubmnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s linear;
+}
+
+.video-content-div .video-content h3 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #132728;
+  margin-top: 10px;
+}
+
+.video-content-div .video-content a {
+  font-size: 0.875rem;
+  color: #24346e;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}

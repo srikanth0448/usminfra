@@ -1,0 +1,89 @@
+.section-header {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 23px;
+  font-size: 48px;
+  line-height: 4rem;
+  font-weight: 400;
+  color: #132728;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+.section-header span {
+  font-weight: 800;
+}
+
+.section-header:before,
+.section-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section-header:before {
+  width: 30px;
+  height: 48px;
+  background: #f8ad42;
+  z-index: -1;
+  top: 25px;
+}
+
+.section-header:after {
+  background: url(https://usminfra.com/assets/img/header-leaf.png) no-repeat;
+  width: 42px;
+  height: 36px;
+  top: 0px;
+  left: 18px;
+}
+
+blockquote {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #24346e;
+  margin-bottom: 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+blockquote.blockquote-gradient {
+  background: #f8ad42;
+  border-radius: 50px 0 0 50px;
+  padding: 3px 150px 2px 40px;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 3.75rem;
+  background: -moz-linear-gradient(
+    90deg,
+    #f8ad42 0%,
+    rgba(248, 173, 66, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #f8ad42 0%,
+    rgba(248, 173, 66, 0) 100%
+  );
+  background: linear-gradient(90deg, #f8ad42 0%, rgba(248, 173, 66, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8ad42",endColorstr="#f8ad42",GradientType=1);
+}
+
+blockquote.blockquote-gradient:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 15px;
+  top: 50%;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #24346e;
+  box-shadow: 0px 0px 0px 3px rgba(110, 78, 36, 0.25);
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(110, 78, 36, 0.25);
+  -moz-box-shadow: 0px 0px 0px 3px rgba(110, 78, 36, 0.25);
+}

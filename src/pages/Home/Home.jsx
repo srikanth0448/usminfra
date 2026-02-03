@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       {/* ================= HERO SECTION ================= */}
-      <section className="hero d-flex align-items-center wood-pattern-bg">
+      <section className="home-section hero d-flex align-items-center wood-pattern-bg">
         <div id="slide-show">
           {[
             "Welcome to USM Infra Go Ranch Golf Resort Sandalwood Farm Plots",
@@ -340,7 +340,7 @@ const Home = () => {
               <img
                 src="https://usminfra.com/assets/img/best-investment-usm-infra-hyderabad-telangana.gif"
                 alt="Best investment opportunities at USM Infra in Hyderabad, Telangana"
-                class="position-absolute d-none d-sm-none d-md-block"
+                className="position-absolute d-none d-sm-none d-md-block"
                 style={{
                   zIndex: 9,
                   bottom: -30,

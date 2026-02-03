@@ -28,15 +28,21 @@ function Header() {
               <NavDropdown.Item eventKey="4.1" as={Link} to="/about">
                 About USM Infra
               </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.2">
+              <NavDropdown.Item eventKey="4.2" as={Link} to="/usm-group">
                 About USM Group
               </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.3">Core Team</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.4">
+              <NavDropdown.Item eventKey="4.3" as={Link} to="/core-team">
+                Core Team
+              </NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.4" as={Link} to="/digital-service">
                 Digital Service
               </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.5">Achievements</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.6">Contact Us</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.5" as={Link} to="/awards">
+                Achievements
+              </NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.6" as={Link} to="/contact-us">
+                Contact Us
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/farm-corner">Farm Corner</Nav.Link>

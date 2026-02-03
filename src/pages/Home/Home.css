@@ -9,7 +9,7 @@
   background-color: #fff;
 }
 
-#slide-show {
+.home-section #slide-show {
   position: absolute;
   inset: 110px 20px 20px;
   z-index: 9;

@@ -7,22 +7,22 @@ const VideoContent = ({ thumbNail, videoUrl, text, readMoreLink }) => {
   return (
     <Card className="video-content-div">
       <Card.Body>
-        <div class="video-wrapper position-relative">
-          <div class="video-overlay position-absolute d-flex align-items-center justify-content-center">
+        <div className="video-wrapper position-relative">
+          <div className="video-overlay position-absolute d-flex align-items-center justify-content-center">
             <a
               href={videoUrl}
-              class="popup-youtube d-flex align-items-center justify-content-center text-white"
+              className="popup-youtube d-flex align-items-center justify-content-center text-white"
             >
               <FaPlay />
             </a>
           </div>
-          <div class="video-thubmnail">
+          <div className="video-thubmnail">
             <img src={thumbNail} alt="" />
           </div>
         </div>
-        <div class="video-content text-center">
+        <div className="video-content text-center">
           <h3>{text}</h3>
-          <a href={readMoreLink} class="btn btn-light mainarrow2">
+          <a href={readMoreLink} className="btn btn-light mainarrow2">
             Read More <HiMiniChevronRight />
           </a>
         </div>

@@ -14,6 +14,10 @@
 } */
 
 /* NAV LINKS */
+button.navbar-close-btn {
+  display: none;
+}
+
 .main-nav .nav-link {
   position: relative;
   transition: color 0.3s ease;
@@ -23,7 +27,7 @@
   color: #24346e;
   white-space: nowrap;
   transition: 0.3s;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* GOLD HOVER UNDERLINE */
@@ -64,7 +68,7 @@
   transform: translateY(10px);
   transition: all 0.25s ease;
   z-index: 1000;
-  min-width: 180px;
+  min-width: 190px;
   box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -91,6 +95,10 @@
   font-size: 14px;
   color: #111;
   text-decoration: none;
+  padding: 10px 5px !important;
+  color: #012970;
+  font-size: 1rem !important;
+  font-weight: 700;
 }
 
 .mega-menu ul li a:hover {
@@ -149,7 +157,7 @@
     visibility: visible;
     transform: none;
     box-shadow: none;
-    padding: 10px 0;
+    padding: 10px !important;
     width: 100%;
   }
 }
@@ -176,6 +184,7 @@
     width: 100%;
     font-size: 16px;
     color: #24346e;
+    cursor: pointer;
   }
 
   /* REMOVE DESKTOP UNDERLINE */
@@ -193,6 +202,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
 
   /* MOBILE DROPDOWN PANEL */
@@ -212,6 +222,8 @@
   /* OPEN STATE */
   .nav-item.dropdown.open .mega-menu {
     display: block;
+    padding: 0px 15px;
+    border: 1px solid #24346e;
   }
 
   /* SIMPLE LIST STYLE (NO MEGA) */
@@ -258,5 +270,92 @@
 
   .nav-item.dropdown.open i {
     transform: rotate(180deg);
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 9;
+    overflow: hidden;
+    background: rgba(1, 22, 61, 0);
+    transition:
+      background-color 0.32s ease,
+      opacity 0.32s ease;
+    margin-top: 0px;
+    border: 0px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1a2d4f;
+    border: 2px solid #ffffff;
+  }
+
+  .navbar-close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-close-btn svg {
+    margin-top: -15px;
+  }
+
+  .ms-auto.main-nav.navbar-nav {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    top: 20px;
+    overflow-y: auto;
+    transform: translateY(18px) scale(0.995);
+    opacity: 0;
+    transition:
+      transform 0.36s cubic-bezier(0.2, 0.9, 0.2, 1),
+      opacity 0.36s ease;
+  }
+
+  /* when collapse is visible (Bootstrap adds .show) animate overlay and panel */
+  .navbar-collapse.show {
+    background: rgba(1, 22, 61, 0.9);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-collapse.collapsing {
+    /* during collapse transition ensure overlay fades */
+    background: rgba(1, 22, 61, 0);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar-collapse.show .ms-auto.main-nav.navbar-nav {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  button.navbar-close-btn {
+    display: block;
   }
 }

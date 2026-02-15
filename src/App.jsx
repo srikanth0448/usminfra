@@ -28,7 +28,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/usm-group" element={<AboutUsmGroup />} />
         <Route path="/core-team" element={<Coreteam />} />
         <Route path="/awards" element={<Awards />} />

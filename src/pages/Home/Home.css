@@ -11,11 +11,9 @@
 
 /* Mobile */
 @media (max-width: 767.98px) {
-
-.hero {
-  height: 30vh;
-}
-
+  .hero {
+    height: 30vh;
+  }
 }
 
 .home-section #slide-show {
@@ -44,7 +42,7 @@
 
 .slide-text h2 {
   margin-bottom: 20px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 45px;
   line-height: 60px;
   font-weight: 100;
@@ -268,7 +266,7 @@
 .text-orange,
 .text-green,
 .text-blue {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 35px;
   font-weight: 600;
 }
@@ -497,4 +495,84 @@
 .ongoing-projects-section .card-body,
 .completed-projects-section .card-body {
   padding: 5px;
+}
+
+.homeModal .modal-content {
+  background: transparent;
+  border: 0px;
+}
+
+.homeModal .custom-header.modal-header {
+  padding: 0px;
+}
+
+.homeModal .custom-header.modal-header {
+  padding: 0px;
+  text-align: right;
+  display: block;
+}
+
+.homeModal button.custom-close {
+  background: transparent;
+  border: 0px;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .whatWeDo-steps .whatWeDo-step {
+    min-height: 295px;
+    display: flex;
+  }
+  .whatWeDo-steps .whatWeDo-step p {
+    width: 100% !important;
+  }
+  .whatWeDo-steps .whatWeDo-step img {
+    margin-right: 1.5rem;
+    display: block;
+  }
+  .whatWeDo-steps .whatWeDo-step1 {
+    background: transparent;
+    padding-left: 0px;
+  }
+  .whatWeDo-steps .whatWeDo-step2 {
+    background: transparent;
+    padding-right: 0px;
+    margin-top: 10px;
+  }
+  .whatWeDo-steps .whatWeDo-step2 img {
+    margin-left: 1.5rem;
+    margin-right: 0;
+  }
+  .whatWeDo-steps .whatWeDo-step3 {
+    background: transparent;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .whatWeDo-steps .whatWeDo-step {
+    min-height: inherit;
+    margin-bottom: 30px;
+  }
+  .whatWeDo-steps .whatWeDo-step img {
+    width: 80px;
+    height: 89px;
+    flex-shrink: 0;
+  }
+
+  .no1-resort-section .row {
+    display: initial;
+  }
+
+  .ongoing-projects-section .card-body,
+  .completed-projects-section .card-body {
+    padding: 0px !important;
+  }
+
+  blockquote.blockquote-gradient {
+    padding: 10px 30px;
+    font-size: 1rem;
+    padding-right: 10px;
+  }
 }

@@ -1,5 +1,5 @@
-import "./Home.css";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col, Card, Modal } from "react-bootstrap";
 import SectionHeading from "../../components/Heading/SectionHeading";
 import QuoteHeading from "../../components/Heading/QuoteHeading";
 import { HiMiniChevronRight } from "react-icons/hi2";
@@ -11,10 +11,32 @@ import {
   ongoingProjects,
   projectHighlights,
 } from "../../JsonData";
+import "./Home.css";
 
 import VideoContent from "../../components/VideoContent/VideoContent";
+import { FaTimes } from "react-icons/fa";
 
 const Home = () => {
+  const [show, setShow] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const handleClose = () => setShow(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       {/* ================= HERO SECTION ================= */}
@@ -308,7 +330,10 @@ const Home = () => {
               </div>
               <Row>
                 {amenitiesData.map((amenity, index) => (
-                  <Col className="col-lg-3 col-md-3 col-sm-6 mb-3 mb-md-0" key={index}>
+                  <Col
+                    className="col-lg-3 col-md-3 col-sm-6 mb-3 mb-md-0 col-12"
+                    key={index}
+                  >
                     <div className="feature-cards-div">
                       <img src={amenity.imgSrc} className="card-img" />
                       <div className="card-img-overlay">
@@ -435,6 +460,31 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        className="homeModal"
+      >
+        <Modal.Header className="custom-header">
+          <button className="custom-close" onClick={handleClose}>
+            <FaTimes />
+          </button>
+        </Modal.Header>
+        <Modal.Body style={{ padding: "0px" }}>
+          <img
+            src={
+              isMobile
+                ? "https://usminfra.com/assets/img/Vista-Springs-Mobile.jpg"
+                : "https://usminfra.com/assets/img/Vista-Springs-Web.jpg"
+            }
+            className="img-fluid"
+          />
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

@@ -4,16 +4,48 @@
   padding-top: 23px;
   font-size: 48px;
   line-height: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #132728;
   margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif !important;
   display: block;
   position: relative;
   z-index: 3;
 }
-
 .section-header span {
-  font-weight: 500;
+  font-weight: 800;
+}
+.section-header:before,
+.section-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section-header:before {
+  width: 30px;
+  height: 48px;
+  background: #f8ad42;
+  z-index: -1;
+  top: 25px;
+}
+.section-header:after {
+  background: url("https://usminfra.com/assets/img/header-leaf.png") no-repeat;
+  width: 42px;
+  height: 36px;
+  top: 0px;
+  left: 18px;
+}
+.section-header.md {
+  font-size: 1.8rem;
+  padding-top: 20px;
+}
+.section-header.md::before {
+  width: 26px;
+  height: 58px;
+}
+.section-header.md :after {
+  left: 14px;
 }
 
 blockquote {

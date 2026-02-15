@@ -8,10 +8,16 @@ import Coreteam from "./pages/About/Coreteam";
 import Awards from "./pages/About/Awards";
 import ContactUs from "./pages/About/ContactUs";
 import DigitalService from "./pages/About/DigitalService";
+import History from "./pages/sandalwood/History";
+import Lifecycle from "./pages/sandalwood/lifecycle";
+import Membership from "./pages/membership/Membership";
+import ScrollToTop from "./components/BgPattern/Scrooltotop";
+ import Nricorner from "./Pages/Nricorner";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +27,10 @@ function App() {
         <Route path="/awards" element={<Awards />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/digital-service" element={<DigitalService />} />
+        <Route path="/nri-corner" element={<Nricorner/>} />
+        <Route path="/History" element={<History />} />
+        <Route path="/lifecycle" element={<Lifecycle />} />
+        <Route path="/membership" element={<Membership />} />
       </Routes>
       <Footer />
     </Router>

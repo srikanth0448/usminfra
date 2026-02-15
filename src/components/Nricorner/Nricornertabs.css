@@ -1,0 +1,285 @@
+.svg-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Section */
+.tabs-sec {
+  background-image: url("../img/wave-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: #16255a;
+}
+
+.tabs-sec .accordion-header,
+.tabs-sec .accordion-button {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.accordion-body{
+  font-family: "Roboto", sans-serif;
+}
+
+/* TAB 1 CARD */
+.tab1-card {
+  border-radius: 1.563rem;
+  border: none;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+
+.tab1-card:before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.tab1-card:hover {
+  background: #fff !important;
+}
+
+.tab1-card:hover:before {
+  opacity: 1;
+}
+
+.tab1-card .tab1-icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: #fcfaf7;
+  box-shadow: 0px 3px 6px rgba(110, 78, 36, 0.11);
+}
+
+.tab1-card .tab1-icon .svg-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.tab1-card .tab1-title {
+  color: #132728;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.tab1-card .tab1-content {
+  color: #494a50;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tab1-card .card-body {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem !important;
+  }
+
+  .tab1-card .tab1-icon {
+    flex-shrink: 0;
+    margin: 0 30px 0 0 !important;
+  }
+
+  .tab1-card .tab1-contentWrapper {
+    text-align: left;
+  }
+
+  .tab1-card .tab1-contentWrapper p:last-child {
+    margin: 0 !important;
+  }
+
+  .tabs-sec .tab-pane {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+  }
+
+  .nav-tabs .nav-link {
+    flex-direction: column;
+    border-radius: 15px !important;
+  }
+
+  .nav-tabs .nav-link .icon {
+    height: 54px;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+}
+
+/* NAV TABS */
+.nav-tabs {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 50px;
+  padding: 6px;
+  display: inline-flex;
+}
+
+.nav-tabs .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50px !important;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover {
+  background: #fff;
+  color: #16255a;
+  border: none;
+}
+
+/* Card */
+.card {
+  border-radius: 1.563rem;
+  border: none;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+
+.card .card-body {
+  padding: 2rem;
+}
+
+/* Projects */
+.our-projects li img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.our-projects li h6 {
+  margin: 10px 0;
+  font-family: "Nunito", sans-serif;
+  color: #132728;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.our-projects li:hover img {
+  border-radius: 50%;
+}
+
+.our-projects li:hover h6 {
+  color: #4154f1;
+}
+
+/* About image */
+.abt-img {
+  overflow: hidden;
+  border-radius: 1.2rem;
+  width: 96%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}
+
+.abt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+/* Hover animation */
+.animate-card {
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.animate-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 16px 32px;
+  transform: translateY(-15px);
+  z-index: 9;
+}
+
+/* Custom List */
+.custom-list li {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  padding-left: 36px;
+  margin-bottom: 20px;
+}
+
+.custom-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-image: url("../img/point-icon.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+/* Back to Top */
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #24346e;
+  opacity: 0.6;
+  color: #fff;
+  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 99999;
+  transition: all 0.2s linear;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+#toTop:hover {
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999;
+  background: #4154f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  background: #6776f4;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

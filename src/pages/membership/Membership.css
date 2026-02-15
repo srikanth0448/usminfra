@@ -1,0 +1,143 @@
+.offers-section {
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #1f3c88, #2952a3);
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+}
+
+.offer-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ff6b00;
+  color: #fff;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.inner-swiper img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.offer-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.offer-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1f3c88;
+}
+
+.offer-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.learn-btn {
+  background: linear-gradient(45deg, #1f3c88, #2952a3);
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "rubik";
+}
+
+.learn-btn:hover {
+  opacity: 0.9;
+}
+
+.terms-text {
+  text-align: center;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 28px !important;
+  width: 28px !important;
+  background: #ffffff8f;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.Membership-Card-bgsection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(236 255 252);
+  z-index: -1;
+}
+
+.Membership-Card-bgsection {
+  position: relative;
+  background: #29397136;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  border: 1px solid #000000;
+}
+
+.amenities-swiper .swiper-slide {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.amenity-slide img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Mobile height */
+@media (max-width: 768px) {
+  .amenity-slide img {
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .terms-text {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffd700;
+    font-size: 18px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .terms-text {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffd700;
+    font-size: 20px;
+  }
+}

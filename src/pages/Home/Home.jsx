@@ -13,6 +13,7 @@ import {
 } from "../../JsonData";
 
 import VideoContent from "../../components/VideoContent/VideoContent";
+
 const Home = () => {
   return (
     <>
@@ -307,7 +308,7 @@ const Home = () => {
               </div>
               <Row>
                 {amenitiesData.map((amenity, index) => (
-                  <Col className="col-lg-3 col-md-3 col-sm-6 mb-3 mb-md-0">
+                  <Col className="col-lg-3 col-md-3 col-sm-6 mb-3 mb-md-0" key={index}>
                     <div className="feature-cards-div">
                       <img src={amenity.imgSrc} className="card-img" />
                       <div className="card-img-overlay">

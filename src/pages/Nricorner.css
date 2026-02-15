@@ -1,0 +1,32 @@
+.bg-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 52, 110, 0.6);
+}
+
+.image-wrapper,
+.content-wrapper {
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* your custom style */
+.abt-img {
+  overflow: hidden;
+  border-radius: 1.2rem;
+  margin: 0 auto;
+  box-shadow: 10px 10px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}

@@ -1,26 +1,262 @@
-.header-logo {
-  height: 68px;
-}
-
-.header-navbar {
+/* HEADER */
+.header {
   height: 80px;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  padding: 0 25px;
+  z-index: 999;
+  padding: 0 20px;
 }
 
-.logo {
-  height: 50px;
+.logo img {
+  width: 70px;
+}
+/* 
+.wood-pattern-bg {
+  background: url("/assets/img/patterns/wood-bg.png") repeat;
+} */
+
+/* NAV LINKS */
+.main-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 10px 0px !important;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #24346e;
+  white-space: nowrap;
+  transition: 0.3s;
+  margin-left: 30px;
 }
 
-.nav-links a {
+/* GOLD HOVER UNDERLINE */
+.main-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 0;
+  height: 2px;
+  background-color: #4154f1;
+  transition: width 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  color: #4154f1;
+}
+
+.main-nav .nav-link:hover::before {
+  width: 70%;
+}
+
+/* DROPDOWN BASE */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* MEGA MENU BASE */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 1000;
+  min-width: 180px;
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  border: 1px solid #24346e;
+}
+
+/* SHOW ON HOVER */
+.nav-item.dropdown:hover > .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* SIMPLE DROPDOWN */
+.mega-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mega-menu ul li a {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+}
+
+.mega-menu ul li a:hover {
+  color: #c89b3c;
+}
+
+/* PROJECTS MEGA MENU */
+.projects-menu {
+  display: flex;
+  gap: 40px;
+  width: 680px;
+}
+
+.mega-col h4 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #39a1f4;
+  margin-bottom: 12px;
+}
+
+.mega-col a {
+  display: block;
+  margin-bottom: 14px;
+  color: #111;
+  text-decoration: none;
+}
+
+.mega-col a strong {
+  display: block;
+  font-size: 15px;
+}
+
+.mega-col a span {
+  display: block;
+  font-size: 12px;
   font-weight: 600;
-  color: #222 !important;
-  margin-right: 20px;
+  color: #444;
 }
 
-.login-btn {
-  background: #1e9c45;
-  border: none;
-  padding: 8px 22px;
-  border-radius: 20px;
+/* LOGIN RIGHT ALIGN */
+.login-menu {
+  right: 0;
+  left: auto;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .main-nav .nav-link::before {
+    display: none;
+  }
+
+  .mega-menu,
+  .projects-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE NAV – USMINFRA STYLE
+========================= */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #fff;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav .nav-link {
+    margin-left: 0;
+    padding: 12px 0 !important;
+    width: 100%;
+    font-size: 16px;
+    color: #24346e;
+  }
+
+  /* REMOVE DESKTOP UNDERLINE */
+  .main-nav .nav-link::before {
+    display: none;
+  }
+
+  /* DROPDOWN RESET */
+  .nav-item.dropdown {
+    width: 100%;
+  }
+
+  .nav-item.dropdown > .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* MOBILE DROPDOWN PANEL */
+  .nav-item.dropdown .mega-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding: 10px 0 10px 15px;
+    display: none;
+    width: 100%;
+    background: transparent;
+  }
+
+  /* OPEN STATE */
+  .nav-item.dropdown.open .mega-menu {
+    display: block;
+  }
+
+  /* SIMPLE LIST STYLE (NO MEGA) */
+  .mega-menu a {
+    display: block;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #24346e;
+  }
+
+  .mega-menu a:hover {
+    color: #c89b3c;
+  }
+
+  /* PROJECTS – STACKED (NO COLUMNS) */
+  .projects-menu {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .mega-col {
+    margin-bottom: 12px;
+  }
+
+  .mega-col h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .mega-col a strong {
+    font-size: 14px;
+  }
+
+  .mega-col a span {
+    font-size: 12px;
+  }
+
+  /* CARET ROTATION */
+  .nav-item.dropdown i {
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item.dropdown.open i {
+    transform: rotate(180deg);
+  }
 }

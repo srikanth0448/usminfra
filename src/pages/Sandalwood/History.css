@@ -1,0 +1,38 @@
+ @media(max-width:767px){
+        .hero.hero-banner .banner-content .bg-img {transform: scale(2);}
+    }
+
+
+    .bg-brand{
+      background-color: #24346E !important;
+  }
+  .overlay-dark-light{
+      background-color: #00000012 !important;
+  }
+
+
+
+
+  .img-fluid{
+border-radius:5px ;
+
+  }
+
+  .hero .img-fluid{
+    border-radius:15px ;
+  }
+
+
+
+.shrink img {
+transition: 1s ease;
+    border-radius:15px ;
+
+}
+
+.shrink img:hover{
+-webkit-transform: scale(0.950);
+-ms-transform: scale(0.950);
+transform: scale(0.950);
+transition: 1s ease;
+}

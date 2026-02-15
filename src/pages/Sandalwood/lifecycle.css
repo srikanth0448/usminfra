@@ -1,0 +1,107 @@
+  .bg-brand {
+        background-image: url(assets/img/sandalwood/wood-textured-background-2.jpg);
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .info {
+        padding: 50px 0;
+    }
+
+
+    .bg-wood-textured {
+        background-image: url(assets/img/sandalwood/wood-textured-background-2.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .info-list-icon {
+        list-style: none;
+    }
+
+    .info-list-icon li {
+        padding-left: 50px;
+        position: relative;
+    }
+
+    .info-list-icon li::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: url(assets/img/sandalwood/img-leafs.png) no-repeat;
+        background-size: 40px;
+        left: 0;
+        top: 0px;
+
+    }
+
+    .info-list-icon li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+
+    .img-fluid {
+        border-radius: 5px;
+    }
+
+    .info {
+        padding: 30px 0;
+    }
+
+ 
+    .shrink img {
+        transition: 1s ease;
+    }
+
+    .shrink img:hover {
+        -webkit-transform: scale(0.950);
+        -ms-transform: scale(0.950);
+        transform: scale(0.950);
+        transition: 1s ease;
+    }
+
+ .backof-TheLifeCycle {
+    background-image: url('https://120.138.10.167/testing/usminfra/assets/img/sandalwood/wood-textured-background-2.jpg');
+}
+    .So-Expensive li{
+            list-style-type: none;
+        }
+
+.So-Expensive {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.So-Expensive li {
+  position: relative;        /* ✅ REQUIRED */
+  padding-left: 55px;        /* space for leaf image */
+}
+
+.So-Expensive li::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(https://usminfra.com/assets/img/sandalwood/img-leafs.png) no-repeat;
+  background-size: 40px;
+  left: 0;
+  top: 0;                  /* adjust vertically */
+}
+
+    /* hover effects*/
+
+    @media(max-width:767px) {
+        .hero.hero-banner .banner-content .bg-img {
+            transform: scale(2);
+
+        }
+        
+    }
+
+    .hero .img-fluid {
+        border-radius: 15px;
+    }

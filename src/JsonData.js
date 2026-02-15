@@ -160,3 +160,67 @@ export const completedProjects = [
     readMoreLink: "https://usminfra.com/bibinagar-phase1",
   },
 ];
+
+// this is sandalwood section
+
+
+export const  lifeCycleImages =[
+
+      {
+          id: 1,
+          image: "https://120.138.10.167/testing/usminfra/assets/img/sandalwood/s01.jfif",
+          alt: "Seed Germination"
+        },
+          {
+            id: 2,
+            image: "https://120.138.10.167/testing/usminfra/assets/img/sandalwood/s02.jfif",
+            alt: "Young Sandalwood Plant"
+          },
+            {
+              id: 3,
+              image: "https://120.138.10.167/testing/usminfra/assets/img/sandalwood/s03.jfif",
+              alt: "Mature Sandalwood Tree"
+            }
+];
+
+
+export const investingimages =[
+
+  {
+    image:"https://usminfra.com/assets/img/sandalwood/px1.png",
+  },
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sx5.jpg",
+  },
+
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/c_11zon2.jpg",
+  },
+
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sxxx5.jpg",
+  },
+ {
+    image:"https://usminfra.com/assets/img/sandalwood/6_11zon2.jpg",
+  },
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sx66.jpg",
+  },
+
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sxxx4.jpg",
+  },
+
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sx99.jpg",
+  },
+    {
+    image:"https://usminfra.com/assets/img/sandalwood/sx88.jpg",
+  },
+
+  
+
+
+]
+
+

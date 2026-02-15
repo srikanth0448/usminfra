@@ -14,6 +14,11 @@ import Membership from "./pages/membership/Membership";
 import ScrollToTop from "./components/BgPattern/Scrooltotop";
 import Nricorner from "./Pages/Nricorner";
 import PageLoader from "./components/PreLoader/PreLoader";
+import Blog from "./pages/Blog/Blog";
+import BlogDetails from "./pages/Blog/BlogDetails";
+import Events from "./pages/Gallery/Events";
+import Customers from "./pages/Gallery/Customers";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -33,6 +38,11 @@ function App() {
         <Route path="/History" element={<History />} />
         <Route path="/lifecycle" element={<Lifecycle />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-details/:id" element={<BlogDetails />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>

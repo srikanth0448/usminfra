@@ -1,0 +1,147 @@
+.blog-container {
+  padding: 20px;
+}
+
+.blog-hero-banner {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 125px;
+  padding: 20px;
+}
+
+.blog-hero-banner .banner-bg {
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: cover !important;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  min-width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 50% 50%;
+}
+
+.blog-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.blog-card .card-body {
+  padding: 20px !important;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-thumbnail {
+  overflow: hidden;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .img-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.meta-icon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.blog-title {
+  color: #132728;
+  font-weight: bold;
+  margin: 20px 0px 18px 0px;
+}
+
+.blog-description {
+}
+
+.read-more {
+  color: #416ff4;
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 600;
+  background: rgba(65, 111, 244, 0);
+  transition: all 0.2s ease-in;
+  padding: 5px 10px;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: #e56700;
+}
+
+@media (max-width: 768px) {
+  .img-wrapper img {
+    height: 180px;
+  }
+}
+
+/* Initial Full Page Loader */
+.full-page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.end-message {
+  font-weight: 600;
+  font-size: 16px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

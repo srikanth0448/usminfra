@@ -12,11 +12,13 @@ import History from "./pages/sandalwood/History";
 import Lifecycle from "./pages/sandalwood/lifecycle";
 import Membership from "./pages/membership/Membership";
 import ScrollToTop from "./components/BgPattern/Scrooltotop";
- import Nricorner from "./Pages/Nricorner";
+import Nricorner from "./Pages/Nricorner";
+import PageLoader from "./components/PreLoader/PreLoader";
 
 function App() {
   return (
     <Router>
+      <PageLoader />
       <ScrollToTop />
       <Header />
       <Routes>
@@ -27,7 +29,7 @@ function App() {
         <Route path="/awards" element={<Awards />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/digital-service" element={<DigitalService />} />
-        <Route path="/nri-corner" element={<Nricorner/>} />
+        <Route path="/nri-corner" element={<Nricorner />} />
         <Route path="/History" element={<History />} />
         <Route path="/lifecycle" element={<Lifecycle />} />
         <Route path="/membership" element={<Membership />} />

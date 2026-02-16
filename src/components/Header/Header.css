@@ -109,7 +109,7 @@ button.navbar-close-btn {
 .projects-menu {
   display: flex;
   gap: 40px;
-  width: 680px;
+  width: 28rem;
 }
 
 .mega-col h4 {

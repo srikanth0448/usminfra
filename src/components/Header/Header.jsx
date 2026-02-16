@@ -182,16 +182,20 @@ const Header = () => {
                 <div className="mega-col">
                   <h4>Completed</h4>
                   <Link to="/bibinagar-phase1" onClick={closeMenu}>
-                    Grand Oaks
+                    <strong>Grand Oaks</strong>
+                    <span>Near Bibinagar Phase 1</span>
                   </Link>
                   <Link to="/bibinagar-phase2" onClick={closeMenu}>
-                    Silver Brooks
+                    <strong>Silver Brooks</strong>
+                    <span>Near Bibinagar Phase 2</span>
                   </Link>
                   <Link to="/shadnagar" onClick={closeMenu}>
-                    Serene Meadows
+                    <strong>Serene Meadows</strong>
+                    <span>Near Shadnagar</span>
                   </Link>
                   <Link to="/shamirpet" onClick={closeMenu}>
-                    Highway Heights
+                    <strong>Highway Heights</strong>
+                    <span>Near Shamirpet</span>
                   </Link>
                 </div>
               </div>

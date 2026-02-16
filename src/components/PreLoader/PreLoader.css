@@ -6,9 +6,24 @@
   width: 100%;
   height: 100vh;
   z-index: 9999;
-  display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
+  opacity: 1;
+  transition: opacity 0.35s ease-out;
+  pointer-events: auto;
+}
+
+/* When preloader is visible */
+#preloader.visible {
+  opacity: 1;
+  display: flex !important;
+}
+
+/* When preloader is hidden */
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Logo styling */

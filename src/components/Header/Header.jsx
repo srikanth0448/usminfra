@@ -14,21 +14,36 @@ const Header = () => {
 
   const closeMenu = () => {
     setOpenDropdown(null);
-    // Close mobile navbar
-    if (navbarToggleRef.current) {
-      navbarToggleRef.current.click();
-    }
+    // Delay closing the navbar to let page transition complete
+    setTimeout(() => {
+      if (navbarToggleRef.current) {
+        navbarToggleRef.current.click();
+      }
+    }, 700); // Match preloader timing + small buffer
   };
 
-  // Prevent background scroll when navbar is open
+  // Prevent background scroll when navbar is open on mobile only
   useEffect(() => {
-    if (isNavbarOpen) {
+    const isMobile = window.innerWidth <= 991;
+
+    if (isNavbarOpen && isMobile) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
     }
 
+    const handleResize = () => {
+      const nowMobile = window.innerWidth <= 991;
+      if (!nowMobile) {
+        // On desktop, reset navbar and allow scroll
+        setIsNavbarOpen(false);
+        document.body.style.overflow = "unset";
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
     return () => {
+      window.removeEventListener("resize", handleResize);
       document.body.style.overflow = "unset";
     };
   }, [isNavbarOpen]);

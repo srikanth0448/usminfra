@@ -4,22 +4,28 @@ import "./Preloader.css";
 
 const PageLoader = () => {
   const location = useLocation();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // When route changes, show loader immediately
     setLoading(true);
 
+    // Delay hiding the loader to ensure page is ready
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // 1 second
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [location.pathname]); // 👈 runs on every route change
 
-  if (!loading) return null;
-
   return (
-    <div id="preloader" className="wood-pattern-bg">
+    <div
+      id="preloader"
+      className={loading ? "visible" : "hidden"}
+      style={{
+        display: loading ? "flex" : "none",
+      }}
+    >
       <div id="status">
         <img
           src="https://usminfra.com/assets/img/usm-infra-sandalwood-farm-plots-logo.svg"

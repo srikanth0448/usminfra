@@ -12,14 +12,13 @@ const Header = () => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
+  // Close menu immediately when link is clicked (preloader covers transition)
   const closeMenu = () => {
     setOpenDropdown(null);
-    // Delay closing the navbar to let page transition complete
-    setTimeout(() => {
-      if (navbarToggleRef.current) {
-        navbarToggleRef.current.click();
-      }
-    }, 700); // Match preloader timing + small buffer
+    // Close navbar immediately - preloader covers the transition
+    if (navbarToggleRef.current) {
+      navbarToggleRef.current.click();
+    }
   };
 
   // Prevent background scroll when navbar is open on mobile only

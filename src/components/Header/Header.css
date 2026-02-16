@@ -282,12 +282,27 @@ button.navbar-close-btn {
     overflow: hidden;
     background: rgba(1, 22, 61, 0);
     transition:
-      background-color 0.32s ease,
-      opacity 0.32s ease;
+      background-color 0.25s ease,
+      opacity 0.25s ease;
     margin-top: 0px;
     border: 0px;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+  }
+
+  .navbar-collapse.show {
+    background: rgba(1, 22, 61, 0.9);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .navbar-collapse.collapsing {
+    background: rgba(1, 22, 61, 0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 
   .navbar-close-btn {
@@ -332,11 +347,16 @@ button.navbar-close-btn {
     transform: translateY(18px) scale(0.995);
     opacity: 0;
     transition:
-      transform 0.36s cubic-bezier(0.2, 0.9, 0.2, 1),
-      opacity 0.36s ease;
+      transform 0.25s cubic-bezier(0.2, 0.9, 0.2, 1),
+      opacity 0.25s ease;
   }
 
   /* when collapse is visible (Bootstrap adds .show) animate overlay and panel */
+  .navbar-collapse.show .ms-auto.main-nav.navbar-nav {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
   .navbar-collapse.show {
     background: rgba(1, 22, 61, 0.9);
     opacity: 1;
@@ -348,11 +368,6 @@ button.navbar-close-btn {
     background: rgba(1, 22, 61, 0);
     opacity: 0;
     pointer-events: none;
-  }
-
-  .navbar-collapse.show .ms-auto.main-nav.navbar-nav {
-    transform: translateY(0) scale(1);
-    opacity: 1;
   }
 
   button.navbar-close-btn {
